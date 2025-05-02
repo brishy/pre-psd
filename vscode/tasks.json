@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+         {
+        "label": "Build App",
+        "type": "shell",
+        "command": "make main",
+        "group": {
+            "kind": "build",
+            "isDefault": true 
+        },
+        "problemMatcher": [ "$gcc" ],
+        "detail": "Builds the main application executable using Part II Makefile"
+    },
+    {
+        "label": "Run App",
+        "type": "shell",
+        "command": "./main",
+        "dependsOn": ["Build App"], 
+        "detail": "Runs the main application './main'"
+    }
+    ]
+}

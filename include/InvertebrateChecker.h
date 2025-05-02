@@ -1,15 +1,16 @@
 #ifndef INVERTEBRATECHECKER_H
 #define INVERTEBRATECHECKER_H
 
-#include "SeaChecker.h"
+#include "SeaChecker.h" //base class
 
-// Forward declaration
+//fwd decl
 class SeaCreature;
 
+//checks rules for invertebrates
 class InvertebrateChecker : public SeaChecker {
 public:
-  // Override the interface method
-  bool canKeep(const SeaCreature &creature) const override;
+  //check rules for this specific creature
+  bool canKeep(const SeaCreature& creature) const override;
 };
 
-#endif // INVERTEBRATECHECKER_H
+#endif

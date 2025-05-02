@@ -1,13 +1,14 @@
 #ifndef ANGLER_H
 #define ANGLER_H
 
-// Forward declaration
+//fwd declaration
 class App;
 
+//represents the user (angler)
 class Angler {
 public:
-  // Method might be used conceptually or to trigger the app
-  void interactWithApp(App &application); // Takes App by reference perhaps
+  //angler interacts with app)
+  void interactWithApp(App& application);
 };
 
-#endif // ANGLER_H
+#endif
